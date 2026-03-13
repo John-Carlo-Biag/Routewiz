@@ -14,7 +14,7 @@ const SECRET = "routewiz_secret";
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.AIzaSyADUva22iuyrogUBjCqFL0QHy0vZni38XI);
 
 app.post("/api/smart-route", async (req, res) => {
     try {
@@ -131,4 +131,5 @@ app.get("/api/trips", auth,(req,res)=>{
 });
 
 app.listen(3000, ()=>console.log("RouteWiz running on http://localhost:3000"));
+
 
